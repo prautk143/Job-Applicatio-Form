@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" pattern="[1-9]{1,6}" title="Enter 1 to 6 digits from 1 to 9" required>
+            <span id="pincodeCount">0/6 digits</span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="degree">Degree:</label>
+            <select id="degree" name="degree" required>
+                <option value="" disabled selected>Select your degree</option>
+                <option value="btech">BTech</option>
+                <option value="be">BE</option>
+                <option value="mca">MCA</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="degreeDivision">Degree Division:</label>
+            <input type="text" id="degreeDivision" name="degreeDivision" required>
+
+            <label for="desiredJobRole">Desired Job Role:</label>
+            <select id="desiredJobRole" name="desiredJobRole" required>
+                <option value="" disabled selected>Select your desired job role</option>
+                <option value="frontendWebDeveloper">Frontend Web Developer</option>
+                <option value="fullStackDeveloper">Full Stack Developer</option>
+                <option value="uiUxDeveloper">UI/UX Developer</option>
+                <option value="cppProgrammer">C++ Programmer</option>
+            </select>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <label for="coverLetter">Cover Letter:</label>
+            <textarea id="coverLetter" name="coverLetter" rows="4" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
